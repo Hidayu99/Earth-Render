@@ -13,13 +13,7 @@ renderer.setSize(window.innerWidth, window.innerHeight);
 document.body.appendChild(renderer.domElement);
 
 // Create Earth sphere
-const geometry = new THREE.SphereGeometry(2, 32, 32);
-const textureLoader = new THREE.TextureLoader();
 const earthTexture = textureLoader.load('https://threejs.org/examples/textures/planets/earth_atmos_2048.jpg');
-');
-const material = new THREE.MeshBasicMaterial({ map: earthTexture });
-const earth = new THREE.Mesh(geometry, material);
-scene.add(earth);
 
 // Pinpoint locations
 const locations = [
